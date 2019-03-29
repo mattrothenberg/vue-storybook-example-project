@@ -31,7 +31,7 @@ import {
 import StoryTemplateDecorator from '../../src/stories/story-template-decorator';
 import {
   withInfo
-} from 'storybook-addon-vue-info'
+} from 'storybook-addon-vue-info';
 // const req = require.context('../../src/stories', true, /.stories.js$/)
 const req = require.context("../../src/components", true, /\.vue$/);
 
