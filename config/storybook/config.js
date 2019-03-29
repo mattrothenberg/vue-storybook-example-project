@@ -3,7 +3,7 @@ import { configure, storiesOf } from '@storybook/vue'
 import { action, configureActions } from '@storybook/addon-actions';
 import { registerStories } from 'vue-storybook'
 import { withNotes } from "@storybook/addon-notes";
-import { withKnobs, text, color, select, boolean } from "@storybook/addon-knobs/vue";
+import { withKnobs, text, boolean, number, select, color, radios, date, files, object, array, optionsKnob, button } from "@storybook/addon-knobs/vue";
 import StoryTemplateDecorator from '../../src/stories/story-template-decorator';
 import { withInfo } from 'storybook-addon-vue-info'
 // const req = require.context('../../src/stories', true, /.stories.js$/)
@@ -15,12 +15,21 @@ function loadStories() {
       req, 
       filename, 
       storiesOf, 
-      knobs: {
+      plugins: {
         withKnobs,
         withNotes,
-        action,
         text,
-        boolean
+        boolean,
+        number,
+        select,
+        color,
+        radios,
+        date,
+        files,
+        object,
+        array,
+        optionsKnob,
+        button
       },
       decorators: [
         withInfo,
