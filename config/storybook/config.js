@@ -10,10 +10,10 @@ import { withInfo } from 'storybook-addon-vue-info'
 const req = require.context("../../src/components", true, /\.vue$/);
 
 function loadStories() {
-  req.keys().forEach(filename => {
+  req.keys().forEach(fileName => {
     let configurationObject = {
       req, 
-      filename, 
+      fileName, 
       storiesOf, 
       plugins: {
         withKnobs,
