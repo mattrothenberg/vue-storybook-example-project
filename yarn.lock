@@ -10183,10 +10183,10 @@ vue-loader@^15.6.4:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-storybook@^1.0.0-0:
-  version "1.0.0-0"
-  resolved "https://registry.yarnpkg.com/vue-storybook/-/vue-storybook-1.0.0-0.tgz#de93a57828377866d1716694d22d40d62053a559"
-  integrity sha512-0VNe+OAU9BJEJb404R9YT/woPmoZLg/aU/CDUjfaaZgAZ3GhYoc5A485RdyCdPHXDvi0/ekGOw7U6SA6raGUtA==
+vue-storybook@^1.0.0-1:
+  version "1.0.0-1"
+  resolved "https://registry.yarnpkg.com/vue-storybook/-/vue-storybook-1.0.0-1.tgz#eb807f960d3469c73d4393f7b98e5e678776d5a3"
+  integrity sha512-qsF30bRR1Pg9S4oC28CqTWAeVWuW1i6J7ZpcqCSwmjZsZpO8FEj7NCXdh7y+2IhRgtCvLJFlCEtgG99P4VEXgQ==
   dependencies:
     serialize-javascript "^1.6.1"
     webpack-parse-query "^1.0.1"

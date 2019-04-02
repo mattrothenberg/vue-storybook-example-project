@@ -10,13 +10,19 @@ const req = require.context("../../src/components", true, /\.vue$/);
 
 function loadStories() {
   req.keys().forEach(filename => {
-    registerStories(req, filename, storiesOf, {
-      withKnobs,
-      withNotes,
-      action,
-      text,
-      boolean
-    })
+    const config = {
+      knobs: {
+        text,
+        boolean
+      },
+      decorators: [
+        withKnobs
+      ],
+      methods: {
+        action
+      }
+    }
+    registerStories(req, filename, storiesOf, config)
   })
 }
 
